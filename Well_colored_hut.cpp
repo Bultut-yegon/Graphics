@@ -3,7 +3,7 @@
 #include <GL/gl.h>
 #include <GL/glut.h>
 void getShape(){
-    glClearColor(0.3f,0.5f,0.7f,1.0f);
+    glClearColor(0.0f,0.0f,0.0f,0.0f);
     glClear(GL_COLOR_BUFFER_BIT);
 
 
@@ -23,7 +23,7 @@ void getShape(){
 
     //border
     //red
-    glBegin(GL_POLYGON);
+    glBegin(GL_LINE_SMOOTH);
     glColor4f(1.0,0.0,0.0,0.0);
 
 	 glVertex2f(-0.4, -0.5);
@@ -37,7 +37,7 @@ void getShape(){
 	//glVertex2f(-0.4, -0.9);
     //Greeen
    
-    glBegin(GL_POLYGON); 
+    glBegin(GL_LINE_SMOOTH); 
     glColor4f(0.0,1.0,0.0,0.0);
 
 	 glVertex2f(-0.4, -0.8);
@@ -47,7 +47,7 @@ void getShape(){
     glEnd();
     //Blue
     
-    glBegin(GL_POLYGON);
+    glBegin(GL_LINE_SMOOTH);
     glColor4f(0.0,0.0,1.0,0.0);
 
 	 glVertex2f(0.3, -0.5);
@@ -90,7 +90,7 @@ int main(int argc, char** argv) {
     //glutInitWindowSize(800,600);
     //glutInitWindowPosition(100,100);
     int width = 800, height = 600;
-    int x = (1368 - width) / 2, y = (768 - height)/ 2;
+    int x = (1380 - width) / 2, y = (780 - height)/ 2;
     glutInitWindowPosition(x, y);
     glutInitWindowSize(width, height);
     glutCreateWindow("Simple Hut");
